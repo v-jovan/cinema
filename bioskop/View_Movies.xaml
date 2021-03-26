@@ -1,0 +1,24 @@
+﻿<Window x:Class="bioskop.View_Movies"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bioskop"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        mc:Ignorable="d"
+        Title="Pregled filmova" Height="479.926" Width="585.211"
+        Icon="C:\Users\Jovan\Desktop\baze\projekat\cinema-clapperboard.png"
+        WindowStartupLocation="CenterScreen" BorderBrush="#FF3D3AB7"
+        SizeToContent="Height">
+    <Grid>
+        <DataGrid x:Name="dg"  ItemsSource="{Binding}" HorizontalScrollBarVisibility="Auto"  VerticalAlignment="Stretch" VerticalContentAlignment="Stretch" IsReadOnly="True"/>
+
+    </Grid>
+</Window>

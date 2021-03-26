@@ -1,0 +1,34 @@
+﻿<Window x:Class="bioskop.Seller"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns:local="clr-namespace:bioskop"
+        mc:Ignorable="d"
+        Title="Sistem za prodavača" Height="443.957" Width="984.828"
+        Icon="C:\Users\Jovan\Desktop\baze\projekat\cinema-clapperboard.png"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FFF1EFEF" HorizontalAlignment="Left" Height="359" Margin="21,25,0,0" StrokeThickness="0" VerticalAlignment="Top" Width="247" RadiusY="13" RadiusX="13"/>
+
+        <Button Content="Prikaži rezervacije" HorizontalAlignment="Left" Margin="74,112,0,0" VerticalAlignment="Top" Width="140" Height="30" Click="Show_Reservation_Click" Background="#FF3D3AB7" BorderBrush="#FF3D3AB7" FontSize="12"/>
+        <Button Content="Dodaj rezervaciju" HorizontalAlignment="Left" Margin="74,163,0,0" VerticalAlignment="Top" Width="140" Height="30" Click="Add_Reservation_Click" Background="#FF3D3AB7" BorderBrush="#FF3D3AB7" FontSize="12"/>
+        <Button Content="Izmijeni rezervaciju" HorizontalAlignment="Left" Margin="74,213,0,0" VerticalAlignment="Top" Width="140" Height="30" Click="Edit_Reservation_Click" Background="#FF3D3AB7" BorderBrush="#FF3D3AB7" FontSize="12"/>
+        <Button Content="Quit" HorizontalAlignment="Left" Margin="74,331,0,0" VerticalAlignment="Top" Width="140" Height="30" Click="Quit_Click" Background="#FF3D3AB7" BorderBrush="#FF3D3AB7" FontSize="12"/>
+        <Label Content="Prijavljeni prodavač:" HorizontalAlignment="Left" Height="30" Margin="33,32,0,0" VerticalAlignment="Top" Width="235" FontWeight="Bold"/>
+        <Label x:Name="logged_in" Content="MARKO MARKOVIC (1984)" HorizontalAlignment="Left" Height="28" Margin="33,59,0,0" VerticalAlignment="Top" Width="223" HorizontalContentAlignment="Center" FontStyle="Italic"/>
+        <Button Content="Logout" HorizontalAlignment="Left" Margin="74,285,0,0" VerticalAlignment="Top" Width="140" Height="30" Click="Logout_Click" Background="#FF3D3AB7" BorderBrush="#FF3D3AB7" FontSize="12"/>
+        <Frame x:Name="Frame" NavigationUIVisibility="Hidden"  HorizontalAlignment="Left" Height="360" Margin="298,25,0,0" VerticalAlignment="Top" Width="665"/>
+    </Grid>
+</Window>
